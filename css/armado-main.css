@@ -1,0 +1,261 @@
+.nav-tabs .nav-item.show .nav-link, 
+.nav-tabs .nav-link.active {
+    color: #5bb300;
+	background-color: #FFFFFF;
+    border-color: #5bb300;
+    /*border-bottom-color: transparent;*/
+	-webkit-box-shadow: 0px 0px 7px #968d8d;
+	-moz-box-shadow: 0px 0px 7px #968d8d;
+    box-shadow: 0px 0px 7px #968d8d;
+}
+
+.nav-tabs .nav-link {
+    color: #d3ffad;
+    background-color: #5bb300;
+    border-color: #5bb300;
+    text-transform: uppercase;
+
+    -webkit-border-radius: 50%;
+	-moz-border-radius: 50%;
+	-o-border-radius: 50%;
+    border-radius: 50%;
+
+    border-width: 2px;
+}
+
+.nav-tabs .nav-link:focus,
+.nav-tabs .nav-link:hover {
+    
+
+    color: #5bb300;
+	background-color: #FFFFFF;
+    border-color: #5bb300;
+    /*border-bottom-color: transparent;*/
+}
+
+.nav-tabs .nav-link {
+    font-size: 11px;
+    padding: .5rem .4rem;
+
+    height: 70px;
+    width: 70px;
+}
+
+.nav-tabs .nav-item {
+    margin: 0 0.5px;
+    position: relative;
+}
+
+
+
+.nav-tabs {
+    border-bottom-color: transparent;
+}
+
+.nav-tabs .nav-link > span {
+	display: block;
+
+	position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 6px;
+
+    font-size: 14px;
+}
+
+.nav-tabs {
+	text-align: center;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #5bb300;
+    border-color: #5bb300;
+
+    outline: none;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active, 
+.btn-primary:not(:disabled):not(.disabled):active, 
+.show>.btn-primary.dropdown-toggle {
+    color: #fff;
+    background-color: #5bb300;
+    border-color: #5bb300;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #79cd20;
+    border-color: #79cd20;
+}
+
+.btn.focus, .btn:focus {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+    box-shadow: none;
+}
+.btn-primary:not(:disabled):not(.disabled).active:focus, 
+.btn-primary:not(:disabled):not(.disabled):active:focus, 
+.show>.btn-primary.dropdown-toggle:focus {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+    box-shadow: none;
+}
+
+.step1 > .nav-link {
+	padding-top: 24px;
+}
+.step1 > .nav-link > i {
+	font-size: 27px;
+}
+
+.step2 > .nav-link {
+	padding-top: 26px;
+}
+.step2 > .nav-link > i {
+	font-size: 27px;
+}
+
+.step3 > .nav-link {
+	padding-top: 27px;
+}
+.step3 > .nav-link > i {
+	font-size: 27px;
+}
+
+.step4 > .nav-link {
+	padding-top: 24px;
+}
+.step4 > .nav-link > i {
+	font-size: 26px;
+}
+
+.step5 > .nav-link {
+	padding-top: 24px;
+}
+.step5 > .nav-link > i {
+	font-size: 25px;
+}
+
+.step6 > .nav-link {
+	padding-top: 24px;
+}
+.step6 > .nav-link > i {
+	font-size: 27px;
+}
+
+.step7 > .nav-link {
+	padding-top: 24px;
+}
+.step7 > .nav-link > i {
+	font-size: 27px;
+}
+
+.step8 > .nav-link {
+	padding-top: 26px;
+}
+.step8 > .nav-link > i {
+	font-size: 27px;
+}
+
+.step9 > .nav-link {
+	padding-top: 28px;
+}
+.step9 > .nav-link > i {
+	font-size: 27px;
+}
+
+.step10 > .nav-link {
+	padding-top: 25px;
+}
+.step10 > .nav-link > i {
+	font-size: 27px;
+}
+
+.step11 > .nav-link {
+	padding-top: 27px;
+}
+.step11 > .nav-link > i {
+	font-size: 27px;
+}
+
+.step12 > .nav-link {
+	padding-top: 27px;
+}
+.step12 > .nav-link > i {
+	font-size: 27px;
+}
+
+.step13 > .nav-link {
+	padding-top: 27px;
+}
+.step13 > .nav-link > i {
+	font-size: 27px;
+}
+
+.step14 > .nav-link {
+	padding-top: 27px;
+}
+.step14 > .nav-link > i {
+	font-size: 27px;
+}
+
+.step15 > .nav-link {
+	padding-top: 27px;
+}
+.step15 > .nav-link > i {
+	font-size: 27px;
+}
+
+
+.tab-content-title {
+	color: #313131;
+}
+
+/*
+.table-30p {
+	width: 30%;
+}
+
+table { table-layout: fixed; }
+table th, table td { overflow: hidden; cursor: pointer; }
+*/
+
+.table-hover tbody tr:hover {
+    background-color: #5bb300;
+    color: #FFFFFF;
+}
+
+.table tbody tr {
+	cursor: pointer;
+}
+
+.table tfoot {
+	display: none;
+}
+
+.table tfoot.mostrar {
+	display: table-footer-group;
+}
+
+.mostrarPreviaSeleccionPlataforma {
+	display: none;
+}
+.mostrarPreviaSeleccionPlataforma.mostrar {
+	display: block;
+}
+
+
+.loader {
+	height: 50px;
+	display: none;
+}
+.loader.mostrar {
+	display: inline-block;
+}
+
+.loader-plat-proc {
+    margin-top: 5px;
+}

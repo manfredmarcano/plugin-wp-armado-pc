@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--core first + styles last-->
+  	<link href="css/fontawesome-all.min.css" rel="stylesheet">
+
+  	<!-- Custom -->
+  	<link rel="stylesheet" href="css/armado-main.css">
+
+    <title>PLUGIN</title>
+  </head>
+  <body>
+    <div class="container py-5">
+
+		<ul class="nav nav-tabs justify-content-center" id="armado-navigation" role="tablist">
+		  	<li class="nav-item step1" data-toggle="tooltip" data-placement="bottom" title="Presupuesto">
+		    	<a class="nav-link active" id="uno-tab" data-toggle="tab" href="#uno" role="tab" aria-controls="uno" aria-selected="true"><span>1</span><i class="fas fa-money-bill"></i></a>
+		  	</li>
+		  	<li class="nav-item step2" data-toggle="tooltip" data-placement="bottom" title="Procesador">
+		    	<a class="nav-link" id="dos-tab" data-toggle="tab" href="#dos" role="tab" aria-controls="dos" aria-selected="true"><span>2</span><i class="fas fa-cogs"></i></a>
+		  	</li>
+		  	<li class="nav-item step3" data-toggle="tooltip" data-placement="bottom" title="Placa madre">
+		    	<a class="nav-link" id="tres-tab" data-toggle="tab" href="#tres" role="tab" aria-controls="tres" aria-selected="true"><span>3</span><i class="fas fa-microchip"></i></a>
+		  	</li>
+		  	<li class="nav-item step4" data-toggle="tooltip" data-placement="bottom" title="Gabinete">
+		    	<a class="nav-link" id="cuatro-tab" data-toggle="tab" href="#cuatro" role="tab" aria-controls="cuatro" aria-selected="true"><span>4</span><i class="fas fa-stream"></i></a>
+		  	</li>
+		  	<li class="nav-item step5" data-toggle="tooltip" data-placement="bottom" title="Disco duro">
+		    	<a class="nav-link" id="cinco-tab" data-toggle="tab" href="#cinco" role="tab" aria-controls="cinco" aria-selected="true"><span>5</span><i class="fas fa-hdd"></i></a>
+		  	</li>
+		  	<li class="nav-item step6" data-toggle="tooltip" data-placement="bottom" title="Disco SSD">
+		    	<a class="nav-link" id="seis-tab" data-toggle="tab" href="#seis" role="tab" aria-controls="seis" aria-selected="true"><span>6</span><i class="fas fa-compact-disc"></i></a>
+		  	</li>
+		  	<li class="nav-item step7" data-toggle="tooltip" data-placement="bottom" title="Memoria RAM">
+		    	<a class="nav-link" id="siete-tab" data-toggle="tab" href="#siete" role="tab" aria-controls="siete" aria-selected="true"><span>7</span><i class="fas fa-memory"></i></a>
+		  	</li>
+		  	<li class="nav-item step8" data-toggle="tooltip" data-placement="bottom" title="Tarjeta de vídeo">
+		    	<a class="nav-link" id="ocho-tab" data-toggle="tab" href="#ocho" role="tab" aria-controls="ocho" aria-selected="true"><span>8</span><i class="fas fa-video"></i></a>
+		  	</li>
+		  	<li class="nav-item step9" data-toggle="tooltip" data-placement="bottom" title="Tarjeta de red">
+		    	<a class="nav-link" id="nueve-tab" data-toggle="tab" href="#nueve" role="tab" aria-controls="nueve" aria-selected="true"><span>9</span><i class="fas fa-project-diagram"></i></a>    
+		  	</li>
+		  	<li class="nav-item step10" data-toggle="tooltip" data-placement="bottom" title="Unidad óptica">
+		    	<a class="nav-link" id="diez-tab" data-toggle="tab" href="#diez" role="tab" aria-controls="diez" aria-selected="true"><span>10</span><i class="fas fa-eye"></i></a>
+		  	</li>
+		  	<li class="nav-item step11" data-toggle="tooltip" data-placement="bottom" title="Cooler">
+		    	<a class="nav-link" id="once-tab" data-toggle="tab" href="#once" role="tab" aria-controls="once" aria-selected="true"><span>11</span><i class="fas fa-snowflake"></i></a>
+		  	</li>
+		  	<li class="nav-item step12" data-toggle="tooltip" data-placement="bottom" title="Fuente de poder">
+		    	<a class="nav-link" id="doce-tab" data-toggle="tab" href="#doce" role="tab" aria-controls="doce" aria-selected="true"><span>12</span><i class="fas fa-plug"></i></a>
+		  	</li>
+		  	<li class="nav-item step13" data-toggle="tooltip" data-placement="bottom" title="Sistema operativo">
+		    	<a class="nav-link" id="trece-tab" data-toggle="tab" href="#trece" role="tab" aria-controls="trece" aria-selected="true"><span>13</span><i class="fas fa-tablet"></i></a>
+		  	</li>
+		  	<li class="nav-item step14" data-toggle="tooltip" data-placement="bottom" title="Periféricos">
+		    	<a class="nav-link" id="catorce-tab" data-toggle="tab" href="#catorce" role="tab" aria-controls="catorce" aria-selected="true"><span>14</span><i class="fas fa-keyboard"></i></a>
+		  	</li>
+		  	<li class="nav-item step15" data-toggle="tooltip" data-placement="bottom" title="Finalizar">
+		    	<a class="nav-link" id="quince-tab" data-toggle="tab" href="#quince" role="tab" aria-controls="quince" aria-selected="true"><span>15</span><i class="fas fa-flag-checkered"></i></a>   
+		  	</li>
+		</ul>
+
+
+		<div class="tab-content">
+		  	<div class="tab-pane fade show active" id="uno" role="tabpanel" aria-labelledby="uno-tab">
+
+		  		<h2 class="text-left mt-5 tab-content-title">1) PRESUPUESTO</h2>
+		  		<h6 class="text-left mb-5">(Todos los campos son obligatorios)</h6>
+
+			  	<div class="form-row">
+		    		<div class="form-group col-md-4">
+					    <label for="inputPresupuesto">Presupuesto máximo</label>
+					    <input type="text" class="form-control" id="inputPresupuesto" placeholder="Ingrese presupuesto máximo">
+						<div class="invalid-feedback">Error</div>
+					</div>
+		    	</div>
+		    	<div class="form-row">
+			    	<div class="form-group col-md-4">
+					    <label for="inputNombre">Nombre</label>
+					    <input type="text" class="form-control" id="inputNombre" placeholder="Ingrese nombre">
+						<div class="invalid-feedback">Error</div>
+					</div>
+					<div class="form-group col-md-4">
+					    <label for="inputApellido">Apellido</label>
+					    <input type="text" class="form-control" id="inputApellido" placeholder="Ingrese apellido">
+						<div class="invalid-feedback">Error</div>
+					</div>
+					<div class="form-group col-md-4">
+					    <label for="inputEmail">Correo electrónico</label>
+					    <input type="email" class="form-control" id="inputEmail" placeholder="Ingrese correo electrónico">
+						<div class="invalid-feedback">Error</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 text-right mt-3">
+						<!--
+						<a class="btn btn-secondary btn-lg presupuesto-nav" href="#" role="button" data-button="atras-1"><i class="fas fa-angle-double-left"></i> Atrás</a>
+						-->
+						<a class="btn btn-primary btn-lg presupuesto-nav" href="#" role="button" data-button="adelante-1">Adelante <i class="fas fa-angle-double-right"></i></a>
+					</div>
+				</div>
+				
+		  	</div>
+			<div class="tab-pane fade" id="dos" role="tabpanel" aria-labelledby="dos-tab">
+				
+				<h2 class="text-left mt-5 tab-content-title">2) PROCESADOR</h2>
+		  		<h6 class="text-left mb-5">(La elección de procesador es obligatorio)</h6>
+
+			  	<div class="form-row">
+		    		<div class="form-group col-md-4">
+					    <label for="selectPlataformaProcesador">Seleccionar plataforma del procesador</label>
+					    <select class="form-control" id="selectPlataformaProcesador">
+					    	<option value="">--Seleccionar--</option>
+				      		<option value="intel">Intel</option>
+					      	<option value="amd">AMD</option>
+					    </select>
+					</div>
+					<div class="form-group col-md-4">
+						<img src="images/loader.gif" alt="Cargando..." class="loader loader-plat-proc">
+					</div>
+		    	</div>
+
+		    	<div class="row mostrarPreviaSeleccionPlataforma">
+		    		<div class="col-12">
+		    			<div class="form-inline justify-content-end">
+						  	<div class="form-group mb-2">
+						    	<label for="selectFiltradoPantalla1">Filtrar por:</label>
+						  	</div>
+							<div class="form-group ml-sm-3 mb-2">
+							    <select class="form-control" id="selectFiltradoPantalla2">
+							    	<option value="1">Socket</option>
+						      		<option value="2"># Núcleos</option>
+							    </select>
+							</div>
+						  	<div class="form-group ml-sm-3 mb-2">
+						    	<input type="text" class="form-control" id="filterPantalla2" placeholder="Escriba...">
+						  	</div>
+						</div>
+		    		</div>
+			    	<div class="col-12">
+						
+						<div class="table-responsive-sm">
+							<table class="table table-bordered table-hover" id="pantalla2Lista">
+							  <thead>
+							    <tr>
+							      <th class="table-30p">Generación</th>
+							      <th class="table-30p">Socket</th>
+							      <th class="table-30p"># Núcleos</th>
+							      <th class="table-30p">Precio</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr class="table-success">
+							      	<td>X</td>
+							      	<td>1155</td>
+							      	<td>5</td>
+							      	<td>785</td>
+							    </tr>
+							    <tr>
+						      		<td>III</td>
+								    <td>1156</td>
+								    <td>6</td>
+								    <td>965</td>
+							    </tr>
+							    <tr>
+						      		<td>I</td>
+								    <td>370</td>
+								    <td>4</td>
+								    <td>256</td>
+							    </tr>
+							    <tr>
+						      		<td>IV</td>
+								    <td>426</td>
+								    <td>5</td>
+								    <td>698</td>
+							    </tr>
+							  </tbody>
+								 <tfoot>
+								    <tr>
+								      <td colspan="4" class="text-center table-danger">Sin resultados</td>
+								    </tr>
+  								</tfoot>
+							</table>
+						</div>
+
+
+			    	</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 text-right mt-3">
+						
+						<a class="btn btn-secondary btn-lg presupuesto-nav" href="#" role="button" data-button="atras-2"><i class="fas fa-angle-double-left"></i> Atrás</a>
+						<a class="btn btn-primary btn-lg presupuesto-nav" href="#" role="button" data-button="adelante-2">Adelante <i class="fas fa-angle-double-right"></i></a>
+					</div>
+				</div>
+
+			</div>
+			<div class="tab-pane fade" id="tres" role="tabpanel" aria-labelledby="tres-tab">3...</div>
+			<div class="tab-pane fade" id="cuatro" role="tabpanel" aria-labelledby="cuatro-tab">4...</div>
+			<div class="tab-pane fade" id="cinco" role="tabpanel" aria-labelledby="cinco-tab">5...</div>
+			<div class="tab-pane fade" id="seis" role="tabpanel" aria-labelledby="seis-tab">6...</div>
+			<div class="tab-pane fade" id="siete" role="tabpanel" aria-labelledby="siete-tab">7...</div>
+			<div class="tab-pane fade" id="ocho" role="tabpanel" aria-labelledby="ocho-tab">8...</div>
+			<div class="tab-pane fade" id="nueve" role="tabpanel" aria-labelledby="nueve-tab">9...</div>
+			<div class="tab-pane fade" id="diez" role="tabpanel" aria-labelledby="diez-tab">10...</div>
+			<div class="tab-pane fade" id="once" role="tabpanel" aria-labelledby="once-tab">11...</div>
+			<div class="tab-pane fade" id="doce" role="tabpanel" aria-labelledby="doce-tab">12...</div>
+			<div class="tab-pane fade" id="trece" role="tabpanel" aria-labelledby="trece-tab">13...</div>
+			<div class="tab-pane fade" id="catorce" role="tabpanel" aria-labelledby="catorce-tab">14...</div>
+			<div class="tab-pane fades" id="quince" role="tabpanel" aria-labelledby="quince-tab">15...</div>
+		</div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom scripts -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
