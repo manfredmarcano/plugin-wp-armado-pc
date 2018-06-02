@@ -122,6 +122,7 @@
 				      		<option value="intel">Intel</option>
 					      	<option value="amd">AMD</option>
 					    </select>
+					    <div class="invalid-feedback">Error</div>
 					</div>
 					<div class="form-group col-md-4">
 						<img src="images/loader.gif" alt="Cargando..." class="loader loader-plat-proc">
@@ -132,21 +133,27 @@
 		    		<div class="col-12">
 		    			<div class="form-inline justify-content-end">
 						  	<div class="form-group mb-2">
-						    	<label for="selectFiltradoPantalla1">Filtrar por:</label>
+						    	<label for="selectFiltradoPantalla1">Filtro:</label>
 						  	</div>
 							<div class="form-group ml-sm-3 mb-2">
 							    <select class="form-control" id="selectFiltradoPantalla2">
+							    	<option value="0">Ninguno</option>
 							    	<option value="1">Socket</option>
 						      		<option value="2"># Núcleos</option>
 							    </select>
 							</div>
 						  	<div class="form-group ml-sm-3 mb-2">
+						    	<!--
 						    	<input type="text" class="form-control" id="filterPantalla2" placeholder="Escriba...">
+						    	-->
+						    	<select class="form-control" id="selectResultadoPantalla2" disabled>
+							    	<option>Ninguno</option>
+							    </select>
 						  	</div>
 						</div>
 		    		</div>
 			    	<div class="col-12">
-						
+						<!--
 						<div class="table-responsive-sm">
 							<table class="table table-bordered table-hover" id="pantalla2Lista">
 							  <thead>
@@ -190,6 +197,39 @@
   								</tfoot>
 							</table>
 						</div>
+						-->
+						
+						<div class="row">
+							
+							<div class="col-12 col-md-4 img-procesador">
+								IMAGEN
+							</div>
+							<div class="col-12 col-md-8 resultados-procesadores">
+								<!--
+								<div class="form-check">
+								  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+								  <label class="form-check-label" for="exampleRadios1">
+								    Default radio
+								  </label>
+								</div>
+								<div class="form-check">
+								  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+								  <label class="form-check-label" for="exampleRadios2">
+								    Second default radio
+								  </label>
+								</div>
+								<div class="form-check disabled">
+								  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+								  <label class="form-check-label" for="exampleRadios3">
+								    Disabled radio
+								  </label>
+								</div>
+								-->
+
+							</div>
+						</div>
+
+
 
 
 			    	</div>
@@ -222,7 +262,7 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="js/jquery-3.3.1.slim.min.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 

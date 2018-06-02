@@ -259,3 +259,35 @@ table th, table td { overflow: hidden; cursor: pointer; }
 .loader-plat-proc {
     margin-top: 5px;
 }
+
+
+.img-procesador {
+	height: 300px;
+	text-align: center;
+	background-image: none;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    /* background-color: red; */
+}
+.loader-in-bg {
+	background-image: url(../images/loader.gif);
+	-webkit-background-size: 50px 50px;
+	-moz-background-size: 50px 50px;
+	-o-background-size: 50px 50px;
+	background-size: 50px 50px;
+	background-position: center; 
+}
+.img-procesador img {
+	/*width: 100%;*/
+	/*visibility: none;*/
+	visibility: hidden;
+}
+.imagen-ancho {
+	width: 100%;
+	height: initial;
+}
+.imagen-largo {
+	height: 100%;
+	width: initial;
+}
+
