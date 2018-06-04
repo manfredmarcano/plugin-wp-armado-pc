@@ -314,7 +314,76 @@
 					</div>
 				</div>				
 			</div><!-- / FIN: Placa madre -->
-			<div class="tab-pane fade" id="cuatro" role="tabpanel" aria-labelledby="cuatro-tab">4...</div>
+			<!-- 4: Gabinete -->	
+			<div class="tab-pane fade" id="cuatro" role="tabpanel" aria-labelledby="cuatro-tab">
+
+				<h2 class="text-left mt-5 tab-content-title">4) GABINETE</h2>
+		  		<h6 class="text-left mb-5">(La elección del gabinete es obligatorio)</h6>
+				
+				<div class="row">
+					<div class="col-12 text-center">
+						<img src="images/loader.gif" alt="Cargando..." class="loader loader-gabinetes">
+					</div>
+					<div class="col-12 msj-error-gabinetes-1">
+						<div class="alert alert-danger text-center" role="alert">
+						 	No se encontraron gabinetes compatibles con la placa madre seleccionada previamente 
+						</div>
+					</div>
+					<div class="col-12 msj-error-gabinetes-2">
+						<div class="alert alert-danger text-center" role="alert">
+							Debe haber seleccionado un gabinete para ir al siguiente paso
+						</div>
+					</div>
+				</div>
+				
+		    	<div class="row mostrarPreviaObtencionGabinetes">
+		    		<div class="col-12">
+		    			<div class="form-inline justify-content-end">
+						  	<div class="form-group mb-2">
+						    	<label for="selectFiltradoPantalla4">Filtro:</label>
+						  	</div>
+							<div class="form-group ml-sm-3 mb-2">
+							    <select class="form-control" id="selectFiltradoPantalla4">
+							    	<option value="0">Ninguno</option>
+							    	<option value="1">Marca</option>
+							    </select>
+							</div>
+						  	<div class="form-group ml-sm-3 mb-2">
+						    	<select class="form-control" id="selectResultadoPantalla4" disabled>
+							    	<option>Ninguno</option>
+							    </select>
+						  	</div>
+						</div>
+		    		</div>
+			    	<div class="col-12">
+						
+						<div class="row">
+							
+							<div class="col-12 col-md-4 img-gabinete">
+								IMAGEN
+							</div>
+							<div class="col-12 col-md-8 resultados-gabinetes">
+								<!--
+								<div class="form-check">
+								  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+								  <label class="form-check-label" for="exampleRadios1">
+								    Default radio
+								  </label>
+								</div>
+								-->
+							</div>
+						</div>
+
+			    	</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 text-right mt-3">
+						<a class="btn btn-secondary btn-lg presupuesto-nav" href="#" role="button" data-button="atras-4"><i class="fas fa-angle-double-left"></i> Atrás</a>
+						<a class="btn btn-primary btn-lg presupuesto-nav" href="#" role="button" data-button="adelante-4">Adelante <i class="fas fa-angle-double-right"></i></a>
+					</div>
+				</div>				
+			</div><!-- / FIN: Gabinete -->
 			<div class="tab-pane fade" id="cinco" role="tabpanel" aria-labelledby="cinco-tab">5...</div>
 			<div class="tab-pane fade" id="seis" role="tabpanel" aria-labelledby="seis-tab">6...</div>
 			<div class="tab-pane fade" id="siete" role="tabpanel" aria-labelledby="siete-tab">7...</div>
@@ -336,10 +405,10 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Custom scripts -->
-    
     <script src="js/pantalla1.js"></script>
     <script src="js/pantalla2.js"></script>
     <script src="js/pantalla3.js"></script>
+    <script src="js/pantalla4.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

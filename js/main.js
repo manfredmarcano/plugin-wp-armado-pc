@@ -53,8 +53,8 @@ function checkearCampos (pantActual, direccion) {
 		case "1": return validarPantalla1(); break;
 		case "2": return validarPantalla2(direccion); break;
 		case "3": return validarPantalla3(direccion); break;
-		case "4": /* return validarPantalla4(); */ break;
-		case "5": /* return validarPantalla5(); */ break;
+		case "4": return validarPantalla4(direccion); break;
+		case "5": return true; /* return validarPantalla5(); */ break;
 		case "6": /* return validarPantalla6(); */ break;
 		case "7": /* return validarPantalla7(); */ break;
 		case "8": /* return validarPantalla8(); */ break;
