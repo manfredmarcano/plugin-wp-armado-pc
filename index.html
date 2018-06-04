@@ -21,7 +21,7 @@
 
 		<ul class="nav nav-tabs justify-content-center" id="armado-navigation" role="tablist">
 		  	<li class="nav-item step1" data-toggle="tooltip" data-placement="bottom" title="Presupuesto">
-		    	<a class="nav-link active" id="uno-tab" data-toggle="tab" href="#uno" role="tab" aria-controls="uno" aria-selected="true"><span>1</span><i class="fas fa-money-bill"></i></a>
+		    	<a class="nav-link " id="uno-tab" data-toggle="tab" href="#uno" role="tab" aria-controls="uno" aria-selected="true"><span>1</span><i class="fas fa-money-bill"></i></a>
 		  	</li>
 		  	<li class="nav-item step2" data-toggle="tooltip" data-placement="bottom" title="Procesador">
 		    	<a class="nav-link" id="dos-tab" data-toggle="tab" href="#dos" role="tab" aria-controls="dos" aria-selected="true"><span>2</span><i class="fas fa-cogs"></i></a>
@@ -63,13 +63,13 @@
 		    	<a class="nav-link" id="catorce-tab" data-toggle="tab" href="#catorce" role="tab" aria-controls="catorce" aria-selected="true"><span>14</span><i class="fas fa-keyboard"></i></a>
 		  	</li>
 		  	<li class="nav-item step15" data-toggle="tooltip" data-placement="bottom" title="Finalizar">
-		    	<a class="nav-link" id="quince-tab" data-toggle="tab" href="#quince" role="tab" aria-controls="quince" aria-selected="true"><span>15</span><i class="fas fa-flag-checkered"></i></a>   
+		    	<a class="nav-link disabled" id="quince-tab" data-toggle="tab" href="#quince" role="tab" aria-controls="quince" aria-selected="true"><span>15</span><i class="fas fa-flag-checkered"></i></a>   
 		  	</li>
 		</ul>
-
+<!--show active-->
 
 		<div class="tab-content">
-		  	<div class="tab-pane fade show active" id="uno" role="tabpanel" aria-labelledby="uno-tab">
+		  	<div class="tab-pane fade " id="uno" role="tabpanel" aria-labelledby="uno-tab">
 
 		  		<h2 class="text-left mt-5 tab-content-title">1) PRESUPUESTO</h2>
 		  		<h6 class="text-left mb-5">(Todos los campos son obligatorios)</h6>
@@ -133,7 +133,7 @@
 		    		<div class="col-12">
 		    			<div class="form-inline justify-content-end">
 						  	<div class="form-group mb-2">
-						    	<label for="selectFiltradoPantalla1">Filtro:</label>
+						    	<label for="selectFiltradoPantalla2">Filtro:</label>
 						  	</div>
 							<div class="form-group ml-sm-3 mb-2">
 							    <select class="form-control" id="selectFiltradoPantalla2">
@@ -244,7 +244,76 @@
 				</div>
 
 			</div>
-			<div class="tab-pane fade" id="tres" role="tabpanel" aria-labelledby="tres-tab">3...</div>
+			<!-- 3: Placa madre -->
+			<div class="tab-pane fade" id="tres" role="tabpanel" aria-labelledby="tres-tab">
+
+				<h2 class="text-left mt-5 tab-content-title">3) PLACA MADRE</h2>
+		  		<h6 class="text-left mb-5">(La elección de placa madre es obligatoria)</h6>
+				
+				<div class="row">
+					<div class="col-12 text-center">
+						<img src="images/loader.gif" alt="Cargando..." class="loader loader-placas-madres">
+					</div>
+					<div class="col-12 msj-error-placasMadres-1">
+						<div class="alert alert-danger text-center" role="alert">
+						 	No se encontraron placas madres que posean el socket del procesador seleccionado previamente 
+						</div>
+					</div>
+					<div class="col-12 msj-error-placasMadres-2">
+						<div class="alert alert-danger text-center" role="alert">
+							Debe haber seleccionado una placa madre para ir al siguiente paso
+						</div>
+					</div>
+				</div>
+				
+		    	<div class="row mostrarPreviaObtencionPlacasMadres">
+		    		<div class="col-12">
+		    			<div class="form-inline justify-content-end">
+						  	<div class="form-group mb-2">
+						    	<label for="selectFiltradoPantalla3">Filtro:</label>
+						  	</div>
+							<div class="form-group ml-sm-3 mb-2">
+							    <select class="form-control" id="selectFiltradoPantalla3">
+							    	<option value="0">Ninguno</option>
+							    	<option value="1">Marca</option>
+							    </select>
+							</div>
+						  	<div class="form-group ml-sm-3 mb-2">
+						    	<select class="form-control" id="selectResultadoPantalla3" disabled>
+							    	<option>Ninguno</option>
+							    </select>
+						  	</div>
+						</div>
+		    		</div>
+			    	<div class="col-12">
+						
+						<div class="row">
+							
+							<div class="col-12 col-md-4 img-placa-madre">
+								IMAGEN
+							</div>
+							<div class="col-12 col-md-8 resultados-placa-madre">
+								<!--
+								<div class="form-check">
+								  <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+								  <label class="form-check-label" for="exampleRadios1">
+								    Default radio
+								  </label>
+								</div>
+								-->
+							</div>
+						</div>
+
+			    	</div>
+				</div>
+
+				<div class="row">
+					<div class="col-12 text-right mt-3">
+						<a class="btn btn-secondary btn-lg presupuesto-nav" href="#" role="button" data-button="atras-3"><i class="fas fa-angle-double-left"></i> Atrás</a>
+						<a class="btn btn-primary btn-lg presupuesto-nav" href="#" role="button" data-button="adelante-3">Adelante <i class="fas fa-angle-double-right"></i></a>
+					</div>
+				</div>				
+			</div><!-- / FIN: Placa madre -->
 			<div class="tab-pane fade" id="cuatro" role="tabpanel" aria-labelledby="cuatro-tab">4...</div>
 			<div class="tab-pane fade" id="cinco" role="tabpanel" aria-labelledby="cinco-tab">5...</div>
 			<div class="tab-pane fade" id="seis" role="tabpanel" aria-labelledby="seis-tab">6...</div>
@@ -267,6 +336,10 @@
     <script src="js/bootstrap.min.js"></script>
 
     <!-- Custom scripts -->
+    
+    <script src="js/pantalla1.js"></script>
+    <script src="js/pantalla2.js"></script>
+    <script src="js/pantalla3.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

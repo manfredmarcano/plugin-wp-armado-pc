@@ -261,7 +261,8 @@ table th, table td { overflow: hidden; cursor: pointer; }
 }
 
 
-.img-procesador {
+.img-procesador,
+.img-placa-madre {
 	height: 300px;
 	text-align: center;
 	background-image: none;
@@ -277,7 +278,8 @@ table th, table td { overflow: hidden; cursor: pointer; }
 	background-size: 50px 50px;
 	background-position: center; 
 }
-.img-procesador img {
+.img-procesador img,
+.img-placa-madre img {
 	/*width: 100%;*/
 	/*visibility: none;*/
 	visibility: hidden;
@@ -291,3 +293,32 @@ table th, table td { overflow: hidden; cursor: pointer; }
 	width: initial;
 }
 
+
+.nav-tabs .nav-link.disabled {
+	cursor: not-allowed;
+	border-color: #6c757d;
+	color: #6c757d;
+}
+
+.mostrarPreviaObtencionPlacasMadres {
+	display: none;
+}
+.mostrarPreviaObtencionPlacasMadres.mostrar {
+	display: -ms-flexbox;
+    display: flex;
+}
+
+.msj-error-placasMadres-1,
+.msj-error-placasMadres-2 {
+	display: none;
+}
+.msj-error-placasMadres-1.mostrar,
+.msj-error-placasMadres-2.mostrar {
+	display: -ms-flexbox;
+    display: flex;
+}
+
+
+.alert {
+	width: 100%;
+}
